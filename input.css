@@ -5,7 +5,8 @@
   --color-brand-50:  #f8f5ff;
   --color-brand-100: #eee4ff;
   --color-brand-300: #c9b8ff;
-  --color-brand-500: #9b7cff;
+  --color-brand-500: #9773B3;
+  --color-brand-600: #DDD4E3;
   --color-brand-700: #6a4acb;
 
   --color-accent-500: #f9a7b3;
@@ -23,6 +24,11 @@
   --spacing-6: 1.5rem;
   --spacing-10: 2.5rem;
   --spacing-20: 5rem;
+  --spacing-hero: 7rem;
+
+  
+  
+
 
   /* Type scale */
   --text-xl: 1.25rem;
@@ -35,3 +41,7 @@
 @utility card-shadow {
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
+
+@utility header-shadow {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }

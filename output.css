@@ -6,7 +6,6 @@
     --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-500: oklch(63.7% 0.237 25.331);
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-xl: 36rem;
@@ -23,8 +22,8 @@
     --radius-md: 16px;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-brand-500: #9b7cff;
-    --color-brand-700: #6a4acb;
+    --color-brand-500: #9773B3;
+    --color-brand-600: #DDD4E3;
     --color-text-600: #4a4a4a;
     --spacing-6: 1.5rem;
     --spacing-20: 5rem;
@@ -179,23 +178,8 @@
   }
 }
 @layer utilities {
-  .container {
-    width: 100%;
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
+  .relative {
+    position: relative;
   }
   .mx-auto {
     margin-inline: auto;
@@ -275,6 +259,9 @@
   .py-20 {
     padding-block: var(--spacing-20);
   }
+  .pl-20 {
+    padding-left: var(--spacing-20);
+  }
   .text-center {
     text-align: center;
   }
@@ -309,17 +296,24 @@
     --tw-tracking: var(--tracking-wide);
     letter-spacing: var(--tracking-wide);
   }
-  .text-brand-700 {
-    color: var(--color-brand-700);
-  }
-  .text-red-500 {
-    color: var(--color-red-500);
+  .text-brand-500 {
+    color: var(--color-brand-500);
   }
   .text-text-600 {
     color: var(--color-text-600);
   }
   .text-white {
     color: var(--color-white);
+  }
+  .header-shadow {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  }
+  .hover\:bg-brand-600 {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-brand-600);
+      }
+    }
   }
   .md\:mt-0 {
     @media (width >= 48rem) {
@@ -341,14 +335,9 @@
       align-items: center;
     }
   }
-  .md\:justify-between {
+  .md\:justify-center {
     @media (width >= 48rem) {
-      justify-content: space-between;
-    }
-  }
-  .md\:text-left {
-    @media (width >= 48rem) {
-      text-align: left;
+      justify-content: center;
     }
   }
 }
