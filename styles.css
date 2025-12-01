@@ -190,17 +190,8 @@
   }
 }
 @layer utilities {
-  .absolute {
-    position: absolute;
-  }
   .relative {
     position: relative;
-  }
-  .-top-20 {
-    top: calc(var(--spacing-20) * -1);
-  }
-  .left-10 {
-    left: var(--spacing-10);
   }
   .mx-auto {
     margin-inline: auto;
@@ -237,9 +228,6 @@
   }
   .h-\[526px\] {
     height: 526px;
-  }
-  .h-auto {
-    height: auto;
   }
   .h-full {
     height: 100%;
