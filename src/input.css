@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
 @import "tailwindcss";
+@import "flowbite/src/themes/default";
+
+
+
 
 @theme {
   /* Colours */
@@ -17,8 +23,11 @@
   /* Fonts */
   --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
 
-  /* Radius */
-  --radius-md: 16px;   
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-2xl: 48px;
 
   /* Spacing */
   --spacing-6: 1.5rem;
@@ -26,8 +35,9 @@
   --spacing-20: 5rem;
   --spacing-hero: 7rem;
 
-  
-  
+    /* Custom hero image sizing */
+    --size-w-hero: 517px;
+    --size-h-hero: 517px;
 
 
   /* Type scale */
@@ -39,8 +49,9 @@
 
 
 @utility card-shadow {
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
 }
+
 
 @utility header-shadow {
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
