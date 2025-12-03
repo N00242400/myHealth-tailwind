@@ -13,17 +13,22 @@
   <body class="font-sans bg-soft">
 
     <!-- Header -->
-    <header class="relative w-full px-6 py-2 flex items-center justify-between header-shadow">
-      <img src="img/logo.png" alt="Logo" class="w-12 h-12 object-contain" />
-      <h1 class="text-brand-500 text-2xl font-semibold tracking-wide pl-20">myHealth</h1>
-      <div class="flex items-center gap-6">
+    <header class="relative w-full px-6 py-2 flex items-center header-shadow">
+      <div class="flex-shrink-0">
+        <img src="img/logo.png" alt="Logo" class="w-12 h-12 object-contain" />
+      </div>
+      <div class="flex-1 flex justify-center">
+        <h1 class="text-brand-500 text-2xl font-semibold tracking-wide">myHealth</h1>
+      </div>
+      <div class="flex items-center gap-6 flex-shrink-0">
         <a href="index.html" class="text-brand-500 text-lg font-medium">Home</a>
       </div>
     </header>
     
-  
+    
     <!-- Hero -->
-    <section class="px-6 py-20 flex flex-col md:flex-row items-center justify-center gap-16">
+    <section class="px-6 pt-20 pb-12 flex flex-col md:flex-row items-center justify-center gap-16">
+
 
       <!-- left -->
       <div class="text-center max-w-xl">
@@ -51,14 +56,8 @@
     
     </section>
    
-
       <section class="px-6 py-20">
-
-        <!-- research -->
-        <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal mb-20">
-          Research
-        </h2>
-      
+    
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
       
           <!-- image -->
@@ -66,17 +65,15 @@
             <img 
               src="img/exsisting_apps.png" 
               alt="Existing apps" 
-              class="w-full max-w-full rounded-xl shadow"
+              class="w-full max-w-full "
             >
           </div>
       
           <!-- text -->
           <div>
-            <h3 class="text-brand-500 text-2xl font-semibold mb-4">
-              Secondary Research
-            </h3>
+            <h3 class="research-title">Secondary Research</h3>
       
-            <p class="text-xl text-text-600 leading-relaxed">
+            <p class="research-body">
               We started by looking at existing apps and information about how older
               adults use technology. This helped us understand common problems they face
               and what kinds of features work well. It gave us a good foundation and
@@ -88,169 +85,207 @@
       
       </section>
 
-       <!-- Target Audience -->
-    <section class=" py-24 px-6">
+   <section class="px-6 py-6 ">
+  <div class="max-w-6xl mx-auto">
+    <div class="bg-white rounded-3xl p-8 md:p-12 flex flex-col md:flex-row gap-10 md:gap-14 items-center">
+      
+      <!-- Images column -->
+      <div class="flex flex-row md:flex-col gap-6 md:gap-10 md:w-1/3">
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden shadow-md mx-auto">
+          <img 
+            src="img/elder1.png" 
+            alt="Older adult" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden shadow-md mx-auto">
+          <img 
+            src="img/elder2.png" 
+            alt="Older adult" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden shadow-md mx-auto">
+          <img 
+            src="img/elder3.jpg" 
+            alt="Older adult" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
 
-      <div class="max-w-6xl mx-auto">
-    
-        <!-- wrapper -->
-        <div class="bg-white rounded-2xl p-10 md:p-16 shadow-sm flex flex-col md:flex-row gap-12 justify-center">
-    
-          <!-- iImages -->
-          <div class="flex flex-col gap-12 md:w-1/3">
+      <!-- Text column -->
+      <div class="md:w-2/3">
+        <h3 class="text-brand-500 text-2xl md:text-3xl font-semibold mb-4">
+          Target Audience
+        </h3>
+        <p class="text-text-900 text-lg md:text-xl leading-relaxed font-light mb-6">
+          By studying how older adults use technology, we identified a need for clarity, larger text, 
+          and simple navigation. These insights shaped an experience that feels calm, supportive, 
+          and easy to use for both older adults and their carers.
+        </p>
 
-            <img 
-              src="img/elder1.png" 
-              alt="Older adult"
-              class="w-48 h-48 object-cover rounded-xl mx-auto md:mx-0"
-            />
-    
-            <img 
-              src="img/elder2.png" 
-              alt="Older adult"
-              class="w-48 h-48 object-cover rounded-xl mx-auto md:mx-20"
-            />
-    
-            <img 
-              src="img/elder3.jpg" 
-              alt="Older adult"
-              class="w-48 h-48 object-cover rounded-xl mx-auto md:mx-0"
-            />
-    
+        <ul class="space-y-3 text-text-900 text-base md:text-lg font-light leading-relaxed">
+          <li class="flex gap-3">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Higher risk of depression; many adults aged 60+ live with a mental health condition.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Increased likelihood of high blood pressure and cardiovascular issues.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Poor sleep can raise blood pressure and reduce overall wellbeing.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Many older adults struggle to keep track of complex medication schedules.
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Need for large text, clear language, and simple navigation to support accessibility.
+          </li>
+          <li class="flex gap-3 pt-1">
+            <span class="mt-1 text-brand-700 text-xl">•</span>
+            Integrated mood, cognition, and reminder features can help maintain independence and wellbeing.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Heuristic and paper prototype -->
+ 
+    <section class="section-research">
+      <h3 class="flex justify-center text-brand-500 text-3xl md:text-3xl font-normal leading-snug text-center max-w-4xl mx-auto mb-16">Testing and Iterating the Design</h3>
+      <div class="research-grid">
+        <!-- Card 1 -->
+        <article class="research-card">
+          <div class="research-image">
+            <img src="img/heuristic.png" alt="Heuristic evaluation" class="w-full h-full object-cover" />
           </div>
+          <h3 class="research-title">Heuristic Evaluation</h3>
+          <p class="research-body">
+            Next, I reviewed similar apps and checked them against basic usability rules. This helped me find things that
+            were confusing or hard to use, so we could avoid making the same mistakes in our own design.
+          </p>
+        </article>
     
-          <!-- text-->
-          <div class="md:w-1/2 flex flex-col justify-center">
-              <h3 class="text-brand-500 text-2xl md:text-3xl font-normal mb-4">
-                  Target audeince
-                </h3>
-    
-            <p class="text-text-900 text-xl leading-relaxed font-light ">
-              By studying how older adults use technology, we identified their need
-              for clarity, larger text, and simple navigation. These insights guided
-              us in creating an app that feels supportive and easy to use for them
-              and their carers.
-            </p>
-
-            <ul class="mt-8 space-y-4 text-text-900 text-lg font-light leading-relaxed">
-
-              <li class="flex gap-3">
-                <span class="text-brand-700 text-xl">•</span>
-                Higher risk of depression around 14% of adults aged 60+ live with a mental health condition.
-              </li>
-            
-              <li class="flex gap-3">
-                <span class="text-brand-700 text-xl">•</span>
-                Increased likelihood of high blood pressure and cardiovascular issues.
-              </li>
-            
-              <li class="flex gap-3">
-                <span class="text-brand-700 text-xl">•</span>
-                Poor sleep can raise blood pressure and negatively affect wellbeing.
-              </li>
-            
-              <li class="flex gap-3">
-                <span class="text-brand-700 text-xl">•</span>
-                Many older adults struggle to keep track of daily medication schedules.
-              </li>
-            
-              <li class="flex gap-3">
-                <span class="text-brand-700 text-xl">•</span>
-                Need for large text, clarity, and simple navigation to support accessibility.
-              </li>
-            
-              <li class="flex gap-3 pt-2">
-                <span class="text-brand-700 text-xl">•</span>
-                Integrated features like mood tracking, cognitive exercises, and reminders can improve overall wellbeing.
-              </li>
-            
-            </ul>
-            
-    
+        <!-- Card 2 -->
+        <article class="research-card">
+          <div class="research-image">
+            <img src="img/paperPrototype.png" alt="Paper prototyping " class="w-full h-full object-cover" />
           </div>
-    
+          <h3 class="research-title">Paper Prototyping</h3>
+          <p class="research-body">
+            I then sketched simple screens on paper so I could test ideas quickly with older adults. This made it easy to
+            tweak layouts, try different flows, and see what felt most natural before moving into high‑fidelity designs.
+          </p>
+        </article>
+      </div>
+    </section>
+
+
+    <section class="px-6 sm:px-12 py-20 bg-brand-50">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        
+        <!-- Text -->
+        <div class="w-full md:w-1/2">
+          <h3 class="research-title">Paper to Pixels</h3>
+          <p class="research-body">
+            Finally, we turned our paper sketches into digital designs. We focused on making 
+            everything clear, easy to read, and simple to use. This stage was about taking 
+            our earlier ideas and turning them into a polished, user‑friendly interface.
+          </p>
         </div>
     
-      </div>
+        <!-- Single mockup image -->
+        <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <img 
+              src="img/iphoneMockup.png" 
+              alt="myHealth app mockup" 
+              class="w-full h-full object-contain"
+            />
+          </div>
+        
     
+      </div>
     </section>
-      
+    
+    
 
        <!-- Footer -->
-<footer class="bg-brand-100 px-10 py-16">
-    <!-- grid -->
-      <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        <!-- FOLLOW US -->
-        <div>
-          <h3 class="text-text-900 font-semibold mb-4">FOLLOW US</h3>
-          <div class="flex items-center gap-4 mb-6 text-text-900">
-            <i class="fa-brands fa-facebook text-xl"></i>
-            <i class="fa-brands fa-x-twitter text-xl"></i>
-            <i class="fa-brands fa-tiktok text-xl"></i>
-            <i class="fa-brands fa-instagram text-xl"></i>
-            <i class="fa-brands fa-youtube text-xl"></i>
+       <footer class="bg-brand-100 pt-10 ">
+        <!-- Top grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+          <!-- FOLLOW US -->
+          <div>
+            <h3 class="text-text-900 font-semibold mb-4">FOLLOW US</h3>
+            <div class="flex items-center gap-4 mb-6 text-text-900">
+              <i class="fa-brands fa-facebook text-xl"></i>
+              <i class="fa-brands fa-x-twitter text-xl"></i>
+              <i class="fa-brands fa-tiktok text-xl"></i>
+              <i class="fa-brands fa-instagram text-xl"></i>
+              <i class="fa-brands fa-youtube text-xl"></i>
+            </div>
+            <!-- App Store Buttons -->
+            <div class="space-y-3 flex flex-col items-start w-36">
+              <img src="img/socialMedia.png" alt="Download buttons" />
+            </div>
           </div>
-          <!-- App Store Buttons -->
-          <div class="space-y-3 flex flex-col items-start w-36">
-            <img src="img/socialMedia.png" class="" />
+      
+          <!-- SUPPORT -->
+          <div>
+            <h3 class="text-text-900 font-semibold mb-4">SUPPORT</h3>
+            <ul class="space-y-2 text-text-600">
+              <li>Help</li>
+              <li>Features</li>
+              <li>Family Plan</li>
+              <li>Subscription</li>
+              <li>Gift Cards</li>
+              <li>Privacy</li>
+            </ul>
           </div>
-          
+      
+          <!-- COMPANY INFO -->
+          <div>
+            <h3 class="text-text-900 font-semibold mb-4">COMPANY INFO</h3>
+            <ul class="space-y-2 text-text-600">
+              <li>About Us</li>
+              <li>Careers</li>
+              <li>Press</li>
+              <li>Cookie Policy</li>
+            </ul>
+          </div>
+      
+          <!-- ACCOUNTS -->
+          <div>
+            <h3 class="text-text-900 font-semibold mb-4">ACCOUNTS</h3>
+            <ul class="space-y-2 text-text-600">
+              <li>User log in</li>
+              <li>Carer log in</li>
+            </ul>
+          </div>
         </div>
-        <!-- SUPPORT -->
-        <div>
-          <h3 class="text-text-900 font-semibold mb-4">SUPPORT</h3>
-          <ul class="space-y-2 text-text-600">
-            <li>Help</li>
-            <li>Features</li>
-            <li>Family Plan</li>
-            <li>Subscription</li>
-            <li>Gift Cards</li>
-            <li>Privacy</li>
-          </ul>
+      
+        <!-- Bottom bar -->
+        <div class="mt-12 bg-white ">
+          <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm text-text-600 py-6">
+            <a href="#">Cookie Settings</a>
+            <span>|</span>
+            <a href="#">Data Settings</a>
+            <span>|</span>
+            <a href="#">Cookies</a>
+            <span>|</span>
+            <a href="#">Privacy Notice</a>
+            <span>|</span>
+            <a href="#">Terms and Conditions</a>
+          </div>
         </div>
-        <!-- COMPANY INFO -->
-        <div>
-          <h3 class="text-text-900 font-semibold mb-4">COMPANY INFO</h3>
-          <ul class="space-y-2 text-text-600">
-            <li>About Us</li>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Cookie Policy</li>
-          </ul>
-        </div>
-        <!-- ACCOUNTS -->
-        <div>
-          <h3 class="text-text-900 font-semibold mb-4">ACCOUNTS</h3>
-          <ul class="space-y-2 text-text-600">
-            <li>User log in</li>
-            <li>Carer log in</li>
-          </ul>
-        </div>
-    
-      </div>
-    
-      <!-- bottom content-->
-      <div class="border-t border-black/10 mt-12 pt-6">
-        <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm text-text-600">
-    
-          <a href="#">Cookie Settings</a>
-          <span>|</span>
-    
-          <a href="#">Data Settings</a>
-          <span>|</span>
-    
-          <a href="#">Cookies</a>
-          <span>|</span>
-    
-          <a href="#">Privacy Notice</a>
-          <span>|</span>
-    
-          <a href="#">Terms and Conditions</a>
-    
-        </div>
-      </div>
-    
-    </footer>
+      </footer>
+      
       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
 </body>

@@ -13,6 +13,7 @@
   <body class="font-sans bg-soft ">
 
     <!-- Header -->
+
     <header class="relative w-full px-6 py-2 flex items-center justify-between header-shadow">
       <img src="img/logo.png" alt="Logo" class="w-12 h-12 object-contain" />
       <h1 class="text-brand-500 text-2xl font-semibold tracking-wide pl-20">myHealth</h1>
@@ -24,7 +25,7 @@
     
   
     <!-- Hero -->
-    <section class="px-6 py-20 flex flex-col md:flex-row items-center justify-center gap-16">
+    <section class="px-6 py-12 flex flex-col md:flex-row items-center justify-center gap-16">
 
       <!-- left -->
       <div class="text-center max-w-xl">
@@ -60,7 +61,7 @@
 <section class=" py-24 px-6">
 
   <!-- Headinge -->
-  <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal mb-20 leading-snug">
+  <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal mb-8 leading-snug">
     Built for accuracy, designed for<br />
     your <span class="italic">every day</span>
   </h2>
@@ -113,7 +114,7 @@
             <img src="img/mood.png" class="w-full h-full object-cover" alt="Mood & wellness" />
           </div>
           <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Mood & Wellness</h3>
-          <p class="text-text-600 sm:text-lg leading-relaxed">
+          <p class="text-text-600 text-lg leading-relaxed">
             Log how you feel each day, track your energy levels, and spot patterns between mood, stress and lifestyle.
             Use simple daily check-ins to build better habits and share insights with your care team if you want to.
           </p>
@@ -186,7 +187,7 @@
       <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="4"></button>
     </div>
 
-    <!-- Left Arrow -->
+
   
     <!-- Left Arrow -->
     <button type="button" data-carousel-prev
@@ -206,126 +207,115 @@
   </div>
 </section>
 
-
-<section class="px-4 py-20 bg-white">
-
-      <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal leading-snug mb-20">
-        From the People Who Use myHealth
-      </h2>
-    
-      <div class="max-w-7xl mx-auto flex flex-col items-center gap-16 w-full">
-
-
-        <!-- Testimonial 1 -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-          <!-- Image -->
-          <div class="flex flex-col items-center">
-            <img src="img/elder1.png" alt="Tom" class="w-64 h-64 object-cover rounded-xl shadow-md">
-            <p class="mt-4 text-center text-text-700 text-lg">Tom, 76</p>
-          </div>
-    
-          <!-- Quote -->
-          <p class="text-2xl text-text-600 leading-relaxed max-w-md">
-            “The reminders help me stay on track with my day, and the instructions are simple 
-            enough that I don’t get overwhelmed. I actually enjoy using it.”
-          </p>
-        </div>
-    
-        <!-- Testimonial 2 -->
-        <div class="flex flex-col md:flex-row items-center justify-center gap-6">
-    
-          <!-- Quote -->
-          <p class="text-2xl text-text-600 leading-relaxed max-w-md ">
-            “The reminders help me stay on track with my day, and the instructions are simple 
-            enough that I don’t get overwhelmed. I actually enjoy using it.”
-          </p>
-    
-          <!-- Image -->
-          <div class="flex flex-col items-center  ">
-            <img src="img/elder2.png" alt="Maria" class="w-64 h-64  object-cover rounded-xl shadow-md">
-            <p class="mt-4 text-center text-text-700 text-lg">Maria, 82</p>
-          </div>
-    
-        </div>
-    
-      </div>
-    </section>
-    
- <!-- Footer -->
-<footer class="bg-brand-100 px-10 py-16">
-<!-- grid -->
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-    <!-- FOLLOW US -->
-    <div>
-      <h3 class="text-text-900 font-semibold mb-4">FOLLOW US</h3>
-      <div class="flex items-center gap-4 mb-6 text-text-900">
-        <i class="fa-brands fa-facebook text-xl"></i>
-        <i class="fa-brands fa-x-twitter text-xl"></i>
-        <i class="fa-brands fa-tiktok text-xl"></i>
-        <i class="fa-brands fa-instagram text-xl"></i>
-        <i class="fa-brands fa-youtube text-xl"></i>
-      </div>
-      <!-- App Store Buttons -->
-      <div class="space-y-3 flex flex-col items-start w-36">
-        <img src="img/socialMedia.png" class="" />
-      </div>
+  <section class="section-testimonials">
+    <h2 class="section-heading">
+      From the People Who Use myHealth
+    </h2>
+  
+    <div class="w-full max-w-none mx-auto flex flex-col items-center gap-16">
       
+      <!-- Testimonial 1 -->
+      <div class="testimonial-row">
+        <div class="flex flex-col items-center">
+          <div class="testimonial-avatar">
+            <img src="img/elder1.png" alt="Tom" class="w-full h-full object-cover" />
+          </div>
+          <p class="testimonial-caption">Tom, 76</p>
+        </div>
+        <p class="testimonial-quote">
+          “The reminders help me stay on track with my day, and the instructions are simple 
+          enough that I don’t get overwhelmed. I actually enjoy using it.”
+        </p>
+      </div>
+  
+      <!-- Testimonial 2 -->
+      <div class="testimonial-row">
+        <p class="testimonial-quote">
+          “The reminders help me stay on track with my day, and the instructions are simple 
+          enough that I don’t get overwhelmed. I actually enjoy using it.”
+        </p>
+        <div class="flex flex-col items-center">
+          <div class="testimonial-avatar">
+            <img src="img/elder2.png" alt="Maria" class="w-full h-full object-cover" />
+          </div>
+          <p class="testimonial-caption">Maria, 82</p>
+        </div>
+      </div>
+  
     </div>
-    <!-- SUPPORT -->
-    <div>
-      <h3 class="text-text-900 font-semibold mb-4">SUPPORT</h3>
-      <ul class="space-y-2 text-text-600">
-        <li>Help</li>
-        <li>Features</li>
-        <li>Family Plan</li>
-        <li>Subscription</li>
-        <li>Gift Cards</li>
-        <li>Privacy</li>
-      </ul>
-    </div>
-    <!-- COMPANY INFO -->
-    <div>
-      <h3 class="text-text-900 font-semibold mb-4">COMPANY INFO</h3>
-      <ul class="space-y-2 text-text-600">
-        <li>About Us</li>
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Cookie Policy</li>
-      </ul>
-    </div>
-    <!-- ACCOUNTS -->
-    <div>
-      <h3 class="text-text-900 font-semibold mb-4">ACCOUNTS</h3>
-      <ul class="space-y-2 text-text-600">
-        <li>User log in</li>
-        <li>Carer log in</li>
-      </ul>
-    </div>
+  </section>
+  
 
-  </div>
-
-  <!-- bottom content-->
-  <div class="border-t border-black/10 mt-12 pt-6">
-    <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm text-text-600">
-
-      <a href="#">Cookie Settings</a>
-      <span>|</span>
-
-      <a href="#">Data Settings</a>
-      <span>|</span>
-
-      <a href="#">Cookies</a>
-      <span>|</span>
-
-      <a href="#">Privacy Notice</a>
-      <span>|</span>
-
-      <a href="#">Terms and Conditions</a>
-
-    </div>
-  </div>
-
-</footer>
+        <!-- Footer -->
+        <footer class="bg-brand-100 pt-10 ">
+          <!-- Top grid -->
+          <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- FOLLOW US -->
+            <div>
+              <h3 class="text-text-900 font-semibold mb-4">FOLLOW US</h3>
+              <div class="flex items-center gap-4 mb-6 text-text-900">
+                <i class="fa-brands fa-facebook text-xl"></i>
+                <i class="fa-brands fa-x-twitter text-xl"></i>
+                <i class="fa-brands fa-tiktok text-xl"></i>
+                <i class="fa-brands fa-instagram text-xl"></i>
+                <i class="fa-brands fa-youtube text-xl"></i>
+              </div>
+              <!-- App Store Buttons -->
+              <div class="space-y-3 flex flex-col items-start w-36">
+                <img src="img/socialMedia.png" alt="Download buttons" />
+              </div>
+            </div>
+        
+            <!-- SUPPORT -->
+            <div>
+              <h3 class="text-text-900 font-semibold mb-4">SUPPORT</h3>
+              <ul class="space-y-2 text-text-600">
+                <li>Help</li>
+                <li>Features</li>
+                <li>Family Plan</li>
+                <li>Subscription</li>
+                <li>Gift Cards</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+        
+            <!-- COMPANY INFO -->
+            <div>
+              <h3 class="text-text-900 font-semibold mb-4">COMPANY INFO</h3>
+              <ul class="space-y-2 text-text-600">
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Cookie Policy</li>
+              </ul>
+            </div>
+        
+            <!-- ACCOUNTS -->
+            <div>
+              <h3 class="text-text-900 font-semibold mb-4">ACCOUNTS</h3>
+              <ul class="space-y-2 text-text-600">
+                <li>User log in</li>
+                <li>Carer log in</li>
+              </ul>
+            </div>
+          </div>
+        
+          <!-- Bottom bar -->
+          <div class="mt-12 bg-white ">
+            <div class="max-w-6xl mx-auto flex flex-wrap justify-center gap-6 text-sm text-text-600 py-6">
+              <a href="#">Cookie Settings</a>
+              <span>|</span>
+              <a href="#">Data Settings</a>
+              <span>|</span>
+              <a href="#">Cookies</a>
+              <span>|</span>
+              <a href="#">Privacy Notice</a>
+              <span>|</span>
+              <a href="#">Terms and Conditions</a>
+            </div>
+          </div>
+        </footer>
+        
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
