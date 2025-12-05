@@ -5,17 +5,17 @@
 
 @theme {
   /* Colours */
-  --color-brand-50:  #f8f5ff;
-  --color-brand-100: #eee4ff;
-  --color-brand-300: #c9b8ff;
-  --color-brand-500: #9773B3;
-  --color-brand-600: #DDD4E3;
-  --color-brand-700: #6a4acb;
+  --color-brand-50:  #f8f5ff;   /*light pink */
+  --color-brand-100: #eee4ff;   /*light purple */
+  --color-brand-300: #c9b8ff;   /*purple */
+  --color-brand-500: #9773B3;     /*dark purple */
+  --color-brand-600: #DDD4E3;   /*light grey */
+  --color-brand-700: #6a4acb;  /*dark blue purple */
 
-  --color-accent-500: #f9a7b3;
+  --color-accent-500: #f9a7b3;  /*soft pink */
 
-  --color-text-900: #0e0e0e;
-  --color-text-600: #4a4a4a;
+  --color-text-900: ##999999;   /*light grey */
+  --color-text-600: #4a4a4a;  /*dark grey */
 
   /* Fonts */
   --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
