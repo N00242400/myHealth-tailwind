@@ -10,11 +10,12 @@
   --color-brand-300: #c9b8ff;   /*purple */
   --color-brand-500: #9773B3;     /*dark purple */
   --color-brand-600: #DDD4E3;   /*light grey */
-  --color-brand-700: #6a4acb;  /*dark blue purple */
+  --color-brand-700: #410b66;  /*dark blue purple */
 
   --color-accent-500: #f9a7b3;  /*soft pink */
 
-  --color-text-900: ##999999;   /*light grey */
+  --color-text-900: #999999;   /* light grey */
+
   --color-text-600: #4a4a4a;  /*dark grey */
 
   /* Fonts */
@@ -46,6 +47,27 @@
   --background-image-soft: linear-gradient(to bottom, #F8F6FA, #F3E8FF);
 }
 
+/* utility class is a single-purpose CSS class that does one small job */
+
+@utility pad-x {
+  padding-left: var(--spacing-6);
+  padding-right: var(--spacing-6);
+}
+
+@utility pad-x-sm {
+  /*On screens size sm and up, apply bigger padding*/
+  @screen sm {
+    padding-left: var(--spacing-10);
+    padding-right: var(--spacing-10);
+  }
+}
+
+@utility pad-y {
+  padding-top: var(--spacing-20);
+  padding-bottom: var(--spacing-20);
+}
+
+
 @utility card-shadow {
   box-shadow: 0 4px 4px rgba(0,0,0,0.25);
 }
@@ -67,18 +89,26 @@
 }
 
 
+/*@apply = reuse Tailwind classes inside your own custom classes.*/
 
 @layer components {
+
+  .btn-primary {
+    @apply bg-brand-500 hover:bg-brand-600 text-white text-lg px-8 py-4 rounded-full transition-all duration-200;
+  }
+
   .section-testimonials {
-    @apply px-6 sm:px-12 py-20 bg-white;
+      @apply pad-x pad-x-sm pad-y bg-white;
+    }
+    
   }
 
   .section-heading {
-    @apply text-brand-500 text-4xl md:text-5xl font-normal leading-snug text-center max-w-4xl mx-auto mt-10 mb-16;
-  }
+    @apply text-brand-500 display-heading max-w-4xl mx-auto mt-10 mb-16 text-center;
+  }  
 
   .testimonial-row {
-    @apply flex flex-col md:flex-row items-center justify-center gap-8 max-w-[1200px] px-4 sm:px-8;
+    @apply flex flex-col md:flex-row items-center justify-center gap-8 max-w-7xl px-4 sm:px-8;
   }
 
   .testimonial-avatar {
@@ -89,15 +119,15 @@
     @apply mt-4 text-center text-text-600 text-lg;
   }
   
-
   .testimonial-quote {
     @apply mt-6 text-2xl text-text-600 font-light leading-relaxed max-w-lg;
   }
 
   /* Research cards section */
   .section-research {
-    @apply px-6 sm:px-12 py-20 ;
+    @apply pad-x pad-x-sm pad-y;
   }
+  
 
   .research-heading {
     @apply text-brand-500 text-4xl md:text-5xl font-normal leading-snug text-center max-w-4xl mx-auto mb-24;
@@ -118,9 +148,25 @@
   .research-title {
     @apply text-brand-500 text-2xl font-semibold mb-4;
   }
-
-  .research-body {
-    @apply text-text-600 text-lg md:text-xl leading-relaxed font-light max-w-xl
+  .research-title-white {
+    @apply text-white text-4xl font-semibold mb-8;
   }
 
-}
+  .research-body {
+    @apply text-text-600 text-lg md:text-xl leading-relaxed font-light max-w-7xl
+  }
+  .research-body-white {
+    @apply text-white text-lg md:text-xl leading-relaxed font-light max-w-7xl
+  }
+
+  @utility display-heading {
+    font-size: var(--text-4xl);
+    line-height: 1.2;
+  
+  }
+  @utility heading-large {
+    font-size: var(--text-3xl);
+    line-height: 1.3;
+  
+
+  }  

@@ -25,12 +25,13 @@
     
   
     <!-- Hero -->
-    <section class="px-6 py-12 flex flex-col md:flex-row items-center justify-center gap-16">
+    <section class="pad-x pad-x-sm py-12 flex flex-col md:flex-row items-center justify-center gap-16">
+
 
       <!-- left -->
       <div class="text-center max-w-xl">
 
-          <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal  leading-snug">
+        <h2 class="text-center text-brand-500 display-heading">
           Feel in control of your health
         </h2>
     
@@ -38,9 +39,10 @@
           A simple companion app for managing medication, appointments and mood.
         </p>
     
-        <button class="mt-8 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-full text-lg">
+        <button class="mt-8 btn-primary">
           Download Now
         </button>
+        
       </div>
     
       <!-- right -->
@@ -56,10 +58,10 @@
     </section>
 
     <!-- Process Section -->
-<section class=" py-24 px-6">
+    <section class="pad-x pad-x-sm py-24">
 
   <!-- Headinge -->
-  <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal mb-8 leading-snug">
+  <h2 class="text-center text-brand-500 display-heading mb-8">
     Built for accuracy, designed for<br />
     your <span class="italic">every day</span>
   </h2>
@@ -97,7 +99,7 @@
 </section>
 
 <section class="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-brand-100">
-  <h2 class="text-center text-brand-500 text-3xl sm:text-4xl lg:text-5xl font-normal mb-10 sm:mb-16 leading-snug">
+  <h2 class="text-center text-brand-500 display-heading mb-10 sm:mb-16">
     With myHealth you can track…
   </h2>
 
@@ -189,7 +191,7 @@
   
     <!-- Left Arrow -->
     <button type="button" data-carousel-prev
-      class="group hidden sm:flex absolute top-1/2 left-36 sm:left-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
+      class="group sm:flex absolute top-1/2 left-36 sm:left-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
       <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
       </svg>
@@ -197,7 +199,7 @@
 
     <!-- Right Arrow -->
     <button type="button" data-carousel-next
-      class="group hidden sm:flex absolute top-1/2 right-36 sm:right-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
+      class="group sm:flex absolute top-1/2 right-36 sm:right-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
       <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
       </svg>
@@ -210,7 +212,7 @@
       From the People Who Use myHealth
     </h2>
   
-    <div class="w-full max-w-none mx-auto flex flex-col items-center gap-16">
+    <div class="w-full mx-auto flex flex-col items-center gap-16">
       
       <!-- Testimonial 1 -->
       <div class="testimonial-row">
@@ -243,14 +245,10 @@
   </section>
 
   <!-- Video Section -->
-<section class="py-6 px-6 bg-white">
-  <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal leading-snug mb-8">
+<section class="py-6 px-6 bg-brand-700">
+  <h2 class="  text-center text-white research-title-white mb-8 mt-8">
     See myHealth in Action
   </h2>
-
-  <p class="text-center mt-6 mb-16 text-2xl text-text-600 font-light leading-relaxed max-w-lg;">
-    Watch a quick walkthrough of how the app works.
-  </p>
 
 
   <section class="px-6 py-6">
@@ -258,7 +256,7 @@
   
       <!-- patient side -->
       <div class="text-center">
-        <h3 class="text-brand-500 text-xl font-semibold mb-4">The Patient’s Side</h3>
+        <h3 class="text-white text-xl font-normal mb-4 mt-4">The Patient’s Side</h3>
   
         <div class="w-72 mx-auto rounded-2xl overflow-hidden shadow-xl">
           <video 
@@ -273,7 +271,7 @@
   
       <!-- carer side -->
       <div class="text-center">
-        <h3 class="text-brand-500 text-xl font-semibold mb-4">The Carer’s Side</h3>
+        <h3 class="text-white text-xl font-normal mb-4">The Carer’s Side</h3>
   
         <div class="w-72 mx-auto rounded-2xl overflow-hidden shadow-xl">
           <video 
@@ -291,16 +289,14 @@
   
   
 </section>
-
-  
         <!-- Footer -->
         <footer class="bg-brand-100 pt-10 ">
           <!-- Top grid -->
           <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
             <!-- FOLLOW US -->
             <div>
-              <h3 class="text-text-900 font-semibold mb-4">FOLLOW US</h3>
-              <div class="flex items-center gap-4 mb-6 text-text-900">
+              <h3 class="text-text-100 font-semibold mb-4">FOLLOW US</h3>
+              <div class="flex items-center gap-4 mb-6 text-text-100">
                 <i class="fa-brands fa-facebook text-xl"></i>
                 <i class="fa-brands fa-x-twitter text-xl"></i>
                 <i class="fa-brands fa-tiktok text-xl"></i>
@@ -315,7 +311,7 @@
         
             <!-- SUPPORT -->
             <div>
-              <h3 class="text-text-900 font-semibold mb-4">SUPPORT</h3>
+              <h3 class="text-text-100 font-semibold mb-4">SUPPORT</h3>
               <ul class="space-y-2 text-text-600">
                 <li>Help</li>
                 <li>Features</li>
@@ -328,7 +324,7 @@
         
             <!-- COMPANY INFO -->
             <div>
-              <h3 class="text-text-900 font-semibold mb-4">COMPANY INFO</h3>
+              <h3 class="text-text-100 font-semibold mb-4">COMPANY INFO</h3>
               <ul class="space-y-2 text-text-600">
                 <li>About Us</li>
                 <li>Careers</li>
@@ -339,7 +335,7 @@
         
             <!-- ACCOUNTS -->
             <div>
-              <h3 class="text-text-900 font-semibold mb-4">ACCOUNTS</h3>
+              <h3 class="text-text-100 font-semibold mb-4">ACCOUNTS</h3>
               <ul class="space-y-2 text-text-600">
                 <li>User log in</li>
                 <li>Carer log in</li>
@@ -364,9 +360,9 @@
         </footer>
         
 
-
+<!-- font awesome-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/js/all.min.js" crossorigin="anonymous"></script>
-
+<!-- flowbiet-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
   </body>
