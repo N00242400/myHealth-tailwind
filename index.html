@@ -90,8 +90,7 @@
 
       <a 
       href="process.html" 
-      class="bg-brand-500 hover:bg-brand-600 text-white px-8 py-3 rounded-full text-xl shadow-md"
-    >
+    class="mt-8 bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-full text-lg">
       Learn More
     </a>
     </div>
@@ -106,7 +105,8 @@
 
   <div id="myHealthCarousel" class="relative max-w-5xl mx-auto" data-carousel="static">
     <!-- Fixed-height Carousel inner -->
-    <div class="relative w-full h-[420px] sm:h-[460px] lg:h-[480px] overflow-hidden rounded-2xl">
+    <div class="relative w-full h-carousel-sm sm:h-carousel-md lg:h-carousel-lg overflow-hidden rounded-2xl">
+
       <!-- CARD 1 -->
       <div class="flex justify-center items-stretch w-full h-full" data-carousel-item="active">
         <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
@@ -180,18 +180,18 @@
 
     <!-- Dots -->
     <div class="absolute z-30 flex gap-2 sm:gap-3 -bottom-10 left-1/2 -translate-x-1/2">
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="0"></button>
       <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="1"></button>
       <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="2"></button>
       <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="3"></button>
       <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="4"></button>
+      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="5"></button>
     </div>
 
 
   
     <!-- Left Arrow -->
     <button type="button" data-carousel-prev
-      class="group hidden sm:flex absolute top-1/2 left-4 sm:left-6 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
+      class="group hidden sm:flex absolute top-1/2 left-36 sm:left-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
       <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
       </svg>
@@ -199,7 +199,7 @@
 
     <!-- Right Arrow -->
     <button type="button" data-carousel-next
-      class="group hidden sm:flex absolute top-1/2 right-4 sm:right-6 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
+      class="group hidden sm:flex absolute top-1/2 right-36 sm:right-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
       <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
       </svg>
@@ -244,6 +244,57 @@
   
     </div>
   </section>
+
+  <!-- Video Section -->
+<section class="py-24 px-6 bg-white">
+  <h2 class="text-center text-brand-500 text-4xl md:text-5xl font-normal leading-snug mb-8">
+    See myHealth in Action
+  </h2>
+
+  <p class="text-center text-text-600 text-lg md:text-xl max-w-2xl mx-auto mb-12 font-light">
+    Watch a quick walkthrough of how the app works.
+  </p>
+
+
+  <section class="px-6 py-16">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+  
+      <!-- patient side -->
+      <div class="text-center">
+        <h3 class="text-brand-500 text-xl font-semibold mb-4">The Patient’s Side</h3>
+  
+        <div class="w-72 mx-auto rounded-2xl overflow-hidden shadow-xl">
+          <video 
+            controls 
+            class="w-full h-full object-cover"
+            poster="img/mockup2.png"
+          >
+            <source src="video/walkthrough.mov" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+  
+      <!-- carer side -->
+      <div class="text-center">
+        <h3 class="text-brand-500 text-xl font-semibold mb-4">The Carer’s Side</h3>
+  
+        <div class="w-72 mx-auto rounded-2xl overflow-hidden shadow-xl">
+          <video 
+            controls 
+            class="w-full h-full object-cover"
+            poster="img/mockup1.png"
+          >
+            <source src="video/carerside.mov" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+</section>
+
   
 
         <!-- Footer -->

@@ -54,6 +54,20 @@
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
+@utility h-carousel-sm {
+  height: 26rem;
+}
+
+@utility h-carousel-md {
+  height: 29rem;
+}
+
+@utility h-carousel-lg {
+  height: 30rem;
+}
+
+
+
 @layer components {
   .section-testimonials {
     @apply px-6 sm:px-12 py-20 bg-white;
