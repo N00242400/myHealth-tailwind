@@ -98,114 +98,70 @@
   </div>
 </section>
 
-<section class="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 bg-brand-100">
-  <h2 class="text-center text-brand-500 display-heading mb-10 sm:mb-16">
+
+<!-- card section -->
+<section class="px-4 sm:px-6 lg:px-8 py-12 bg-brand-700">
+  <h2 class="text-center text-white display-heading mb-16">
     With myHealth you can track…
   </h2>
 
-  <div id="myHealthCarousel" class="relative max-w-5xl mx-auto" data-carousel="static">
-    <!-- fixed height of carousel cards -->
-    <div class="relative w-full h-carousel-sm sm:h-carousel-md lg:h-carousel-lg overflow-hidden rounded-2xl">
+  <!--bento grid -->
+  <div class="mx-auto max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-6">
 
-      <!-- CARD 1 -->
-      <div class="flex justify-center items-stretch w-full h-full" data-carousel-item="active">
-        <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
-          <div class="rounded-xl overflow-hidden mb-4 h-48 sm:h-56">
-            <img src="img/mood.png" class="w-full h-full object-cover" alt="Mood & wellness" />
-          </div>
-          <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Mood & Wellness</h3>
-          <p class="text-text-600 text-lg leading-relaxed">
-            Log how you feel each day, track your energy levels, and spot patterns between mood, stress and lifestyle.
-            Use simple daily check-ins to build better habits and share insights with your care team if you want to.
-          </p>
-        </div>
-      </div>
+    <!-- left side-->
+    <div class="bg-white rounded-2xl p-5 shadow-sm flex flex-col">
 
-      <!-- CARD 2 -->
-      <div class="hidden flex justify-center items-stretch w-full h-full" data-carousel-item>
-        <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
-          <div class="rounded-xl overflow-hidden mb-4 h-48 sm:h-56">
-            <img src="img/med.jpg" class="w-full h-full object-cover" alt="Medication" />
-          </div>
-          <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Medication</h3>
-          <p class="text-text-600 sm:text-lg leading-relaxed">
-            Keep all your pills, doses, and schedules in one place with clear reminders so you never miss a dose.
-            Mark medication as taken in a tap and review your adherence over days or weeks for extra peace of mind.
-          </p>
-        </div>
-      </div>
+      <!-- Mood -->
+      <img src="img/mood.png" alt="Mood & wellness"
+        class="rounded-xl w-full h-48 object-cover mb-4">
 
-      <!-- CARD 3 -->
-      <div class="hidden flex justify-center items-stretch w-full h-full" data-carousel-item>
-        <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
-          <div class="rounded-xl overflow-hidden mb-4 h-48 sm:h-56">
-            <img src="img/heart.png" class="w-full h-full object-cover" alt="Heart health" />
-          </div>
-          <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Heart Health</h3>
-          <p class="text-text-600  sm:text-lg leading-relaxed">
-            Record heart rate and blood pressure readings and see how they change over time in clear, simple charts.
-            Highlight trends, save important measurements, and bring a clean history to your next appointment.
-          </p>
-        </div>
-      </div>
+      <h3 class="text-brand-700 text-2xl font-semibold mb-2">Mood & Wellness</h3>
+      <p class="text-text-600 text-lg leading-relaxed">
+        Log how you feel each day, track your energy levels, 
+        and spot patterns between mood, stress and lifestyle.
+      </p>
 
-      <!-- CARD 4 -->
-      <div class="hidden flex justify-center items-stretch w-full h-full" data-carousel-item>
-        <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
-          <div class="rounded-xl overflow-hidden mb-4 h-48 sm:h-56">
-            <img src="img/health.png" class="w-full h-full object-cover" alt="Activity" />
-          </div>
-          <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Activity</h3>
-          <p class="text-text-600  sm:text-lg leading-relaxed">
-            Track your daily movement, from steps and walks to workouts, and stay motivated to move a little more.
-            Set realistic goals, celebrate streaks, and see how activity supports your overall health and mood.
-          </p>
-        </div>
-      </div>
+      <div class="h-px bg-brand-200 my-4"></div>
+      <!-- activity -->
+      <img src="img/health.png" alt="Activity"
+        class="rounded-xl w-full h-44 object-cover mb-4">
 
-      <!-- CARD 5 -->
-      <div class="hidden flex justify-center items-stretch w-full h-full" data-carousel-item>
-        <div class="bg-white rounded-2xl shadow-none p-4 sm:p-5 w-full max-w-sm sm:max-w-md h-full flex flex-col">
-          <div class="rounded-xl overflow-hidden mb-4 h-48 sm:h-56">
-            <img src="img/sleep2.png" class="w-full h-full object-cover" alt="Sleep insights" />
-          </div>
-          <h3 class="text-brand-700 text-xl sm:text-2xl font-semibold mb-2">Sleep Insights</h3>
-          <p class="text-text-600  sm:text-lg leading-relaxed">
-            Log bedtimes, wake-ups, and sleep quality to understand what helps you rest better each night.
-            Spot patterns in your routine, experiment with small changes, and track how they affect your sleep.
-          </p>
-        </div>
-      </div>
+      <h3 class="text-brand-700 text-2xl font-semibold mb-2">Activity Tracking</h3>
+      <p class="text-text-600 text-lg leading-relaxed">
+        Track movement, walks and workouts to stay motivated each day.
+        See how staying active supports your overall wellbeing and mood.
+      </p>
     </div>
 
-    <!-- Dots -->
-    <div class="absolute z-30 flex gap-2 sm:gap-3 -bottom-10 left-1/2 -translate-x-1/2">
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="1"></button>
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="2"></button>
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="3"></button>
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="4"></button>
-      <button class="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-brand-700/40 data-[active=true]:bg-brand-700" data-carousel-slide-to="5"></button>
+    <!-- right side -->
+    <div class="flex flex-col gap-6">
+
+      <!-- medication -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex flex-col">
+        <img src="img/med.jpg" alt="Medication"
+          class="rounded-xl w-full h-40 object-cover mb-4">
+        <h3 class="text-brand-700 text-xl font-semibold mb-2">Medication</h3>
+        <p class="text-text-600 text-lg leading-relaxed">
+          Keep all your pills, doses, and schedules in one place 
+          with clear reminders so you never miss a dose.
+        </p>
+      </div>
+
+      <!-- heart Health -->
+      <div class="bg-white rounded-2xl p-5 shadow-sm flex flex-col">
+        <img src="img/heart.png" alt="Heart Health"
+          class="rounded-xl w-full h-40 object-cover mb-4">
+        <h3 class="text-brand-700 text-xl font-semibold mb-2">Heart Health</h3>
+        <p class="text-text-600 text-lg leading-relaxed">
+          Record heart rate and blood pressure, see how your numbers vary day to day, and notice patterns that may affect your wellbeing. myHealth keeps your readings organised so you can share them with your doctor whenever you need.
+        </p>
+      </div>
+
     </div>
 
-
-  
-    <!-- Left Arrow -->
-    <button type="button" data-carousel-prev
-      class="group sm:flex absolute top-1/2 left-36 sm:left-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
-      <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"/>
-      </svg>
-    </button>
-
-    <!-- Right Arrow -->
-    <button type="button" data-carousel-next
-      class="group sm:flex absolute top-1/2 right-36 sm:right-36 -translate-y-1/2 p-3 bg-white/90 backdrop-blur-sm rounded-full shadow-lg z-40 hover:shadow-xl hover:bg-white hover:scale-105 transition-all duration-300 border border-brand-100">
-      <svg class="w-6 h-6 text-brand-700 group-hover:text-brand-900 transition-colors duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
-      </svg>
-    </button>
   </div>
 </section>
+
 
   <section class="section-testimonials">
     <h2 class="section-heading">

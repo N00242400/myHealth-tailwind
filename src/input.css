@@ -56,10 +56,8 @@
 
 @utility pad-x-sm {
   /*On screens size sm and up, apply bigger padding*/
-  @screen sm {
     padding-left: var(--spacing-10);
     padding-right: var(--spacing-10);
-  }
 }
 
 @utility pad-y {
